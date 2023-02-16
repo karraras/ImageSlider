@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  height: 97vh;
+  justify-content: center;
+}
+.parent {
+  width: 640px;
+  height: 400px;
+}
+.content {
+  overflow: hidden;
+  display: flex;
+  height: calc(100% - 40px);
+  position: relative;
+}
+.content img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content .fr {
+  left: 0;
+}
+.content .se {
+  left: 640px;
+}
+.content .th {
+  left: 1280px;
+}
+.content .fo {
+  left: 1920px;
+}
+.content .fi {
+  left: 2560px;
+}
+/* ======================================= */
+.content .fr.active {
+  transform: translateX(-0px);
+}
+.content .se.active {
+  transform: translateX(-640px);
+}
+.content .th.active {
+  transform: translateX(-1280px);
+}
+.content .fo.active {
+  transform: translateX(-1920px);
+}
+.content .fi.active {
+  transform: translateX(-2560px);
+}
+
+.btn {
+  background: #e2e2e2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.btn span {
+  cursor: pointer;
+  width: 40px;
+  border-radius: 10px;
+  height: 8px;
+  border: solid 2px #0075ff;
+}
+/* ================= */
+.one.active {
+  background-color: #0075ff;
+}
+.two.active {
+  background-color: #0075ff;
+}
+.three.active {
+  background-color: #0075ff;
+}
+.four.active {
+  background-color: #0075ff;
+}
+.five.active {
+  background-color: #0075ff;
+}
